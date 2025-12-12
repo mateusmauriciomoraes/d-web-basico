@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixa{
+    display: grid;
+    padding: 10px;
+    border: solid;
+    align-content: center;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(128, 128, 128);
+}
+
+#titulo{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}

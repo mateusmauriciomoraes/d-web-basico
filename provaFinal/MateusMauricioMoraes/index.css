@@ -1,0 +1,10 @@
+#container p{
+    border: 5px double rgb(255, 0, 0);
+    padding: 10px;
+    margin: 1cm;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+}

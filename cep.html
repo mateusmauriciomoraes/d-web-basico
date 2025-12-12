@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function arrumaCep(elemento)
+{
+    var cep = document.getElementById("cep").value
+    var tamanho = cep.length
+    if(tamanho == 2)
+    {
+        elemento.value+="."
+    }
+    if(tamanho == 6)
+    {
+        elemento.value+="-"
+    }
+    if(cep.charCodeAt(tamanho-1) < 48 || cep.charCodeAt(tamanho-1) > 57)
+    {
+        elemento.value = cep.slice(0,tamanho-1)
+    }
+    document.addEventListener("keydown", function(event){
+    if (event.key === "Backspace") 
+    {
+        elemento.value = "";
+    }
+}
+);
+}
+    </script>
+</head>
+<body>
+    <label>CEP: <input id="cep" type="text" onkeyup="arrumaCep(this)" maxlength="10"></label>
+</body>
+</html>

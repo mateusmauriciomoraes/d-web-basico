@@ -1,0 +1,13 @@
+span{
+font-weight: bold;
+text-decoration: underline;
+letter-spacing: 10px;
+}
+
+.borda{
+    border: 4px double green;
+    border-top: none;
+    border-radius: 5px;
+    padding: 10px;
+    word-spacing: 10px
+}

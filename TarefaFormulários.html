@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>formulário</title>
+</head>
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <label>Nome: <input name="nome"></label>
+        <br>
+        <label>Nascimento: </label>
+        <input type="date" name="nascimento">
+        <br>
+        <label>email: </label>
+        <input name="e-mail">
+        <br>
+        <label>telefone: </label>
+        <input type="tel" name="telefone">
+        <br>
+        <label>possui veículo: </label>
+        <br>
+            <input type="radio" id="sim" name="possuiveiculo">
+            <label for="sim">sim</label>
+            <br>
+            <input type="radio" id="nao" name="possuiveiculo">
+            <label for="nao">nao</label>
+            <br>
+        <label>estado de residencia: </label>
+        <input type="text" name="estado de residencia" maxlength="2">
+        <br>
+        <br>
+
+        <label>Fabricantes de veículos que já conhece: </label>
+            <br>
+            <input type="checkbox" id="honda" name="honda">
+            <label for="honda">Honda</label>
+            <br>
+            <input type="checkbox" id="fiat" name="fiat">
+            <label for="fiat">Fiat</label>
+            <br>
+            <input type="checkbox" id="volkswagen" name="volkswagen">
+            <label for="volkswagen">Volkswagen</label>
+            <br>
+            <input type="checkbox" id="hyundai" name="hyundai">
+            <label for="hyundai">Hyundai</label>
+            <br>
+            <input type="checkbox" id="mercedes" name="mercedes">
+            <label for="mercedes">Mercedes</label>
+            <br>
+            <br>
+
+            <label>Modelo existente favorito: </label>
+            <br>
+            <input type="radio" id="uno" name="modelofavorito">
+            <label for="uno">uno</label>
+            <br>
+            <input type="radio" id="gol" name="modelofavorito">
+            <label for="gol">gol</label>
+            <br>
+            <input type="radio" id="fusca" name="modelofavorito">
+            <label for="fusca">fusca</label>
+            <br>
+            <input type="radio" id="polo" name="modelofavorito">
+            <label for="polo">polo</label>
+            <br>
+            <input type="radio" id="spin" name="modelofavorito">
+            <label for="spin">spin</label>
+            <br>
+            <br>
+
+            <label>Modelo de interesse: </label>
+            <br>
+            <label>Faixa de preço: </label>
+            <input type="range" min="10000" max="500000" step="5000" id="preco" name="preco">
+            <br>
+            <label>Cor: <input title= 'cor' name="cor" type="color"></label>
+            <br>  
+
+        <br>
+        <label>Observações:</label>
+        <br>
+        <textarea id="observacoes" name="observacoes" rows="5" cols="150"></textarea>
+        
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
+</body>
+</html>
